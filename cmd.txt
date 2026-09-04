@@ -1,1 +1,77 @@
 uvicorn main:app --reload --port 8000
+ধাপ ১ — Codespace-এ দুটো zip আপলোড
+আগের Codespace-টাই ব্যবহার করো (বা নতুন বানাও)। Explorer-এ drag & drop করো:
+
+bash
+unzip ai-avatar-system-codespaces-ready.zip
+unzip hermes-and-uitars-COMBINED.zip
+ls
+
+তিনটা ফোল্ডার দেখা উচিত: ai-avatar-system-main, hermes-agent-main, UI-TARS-desktop-0.3.0।
+
+ধাপ ২ — ৩টা Kaggle নোটবুক চালু করো (৩টা আলাদা ব্রাউজার ট্যাব)
+প্রতিটাতে: kaggle.com → New Notebook → File → Import Notebook (.ipynb আপলোড) → ডানপাশে Settings → Accelerator → GPU T4, Internet → On → সব সেল একটা একটা করে Shift+Enter দিয়ে চালাও। শেষ সেলে যে URL+key প্রিন্ট হবে, একটা নোটপ্যাডে টুকে রাখো (৩টার জন্য ৩ সেট)। এই ৩টা ট্যাব বন্ধ করবে না।
+
+ধাপ ৩ — Hermes সেটআপ (Codespace টার্মিনালে)
+
+bash
+cd hermes-agent-main
+bash setup-hermes.sh
+hermes model
+
+hermes model চালালে একটা উইজার্ড খুলবে — "Custom OpenAI-compatible" বেছে ধাপ ২-এর llm_kaggle_server নোটবুকের URL + key বসাও।
+
+ধাপ ৪ — UI-TARS bridge
+
+bash
+cd ../UI-TARS-desktop-0.3.0
+pnpm install
+cp apps/ui-tars-bridge/.env.example apps/ui-tars-bridge/.env
+
+.env ফাইল খুলে ধাপ ২-এর ui_tars_kaggle_server নোটবুকের ৩টা মান বসাও। তারপর:
+
+bash
+pnpm --filter @apps/ui-tars-bridge dev
+
+এই টার্মিনাল খোলা রাখো। নতুন টার্মিনাল খুলে:
+
+bash
+curl http://127.0.0.1:8642/healthz
+cp ../UI-TARS-desktop-0.3.0/hermes-tool/ui_tars_delegate_tool.py ../hermes-agent-main/tools/
+export UI_TARS_BRIDGE_URL=http://127.0.0.1:8642
+
+ধাপ ৫ — Avatar backend (এই একই টার্মিনালে)
+
+bash
+cd ../ai-avatar-system-main/backend
+source ../../hermes-agent-main/.venv/bin/activate
+pip install --no-build-isolation -r requirements.txt
+cd ..
+
+.env ফাইলে (আগেরটার সাথে) এইগুলো যোগ/বদলাও:
+
+LLM_PROVIDER=hermes
+HERMES_AGENT_PATH=/workspaces/<তোমার-repo-নাম>/hermes-agent-main
+AVATAR_ENGINE=musetalk_remote
+MUSETALK_REMOTE_URL=<ধাপ ২-এর musetalk নোটবুকের URL>
+MUSETALK_REMOTE_API_KEY=<একইভাবে key>
+
+(pwd চালিয়ে HERMES_AGENT_PATH-এর আসল path যাচাই করে নাও)
+
+ধাপ ৬ — ডাটাবেস + backend + frontend চালু
+
+bash
+docker compose up -d postgres redis
+python main.py
+
+এই টার্মিনাল খোলা রাখো। আরেকটা নতুন (৪র্থ) টার্মিনালে:
+
+bash
+cd frontend
+npm install
+npm run dev
+
+ধাপ ৭ — টেস্ট
+Codespaces-এর Ports ট্যাব থেকে ৩০০০ নম্বর পোর্ট খোলো (Public করে দাও), চ্যাটে লিখো — "notepad খুলে hello লিখে দাও"।
+
+একটা বাস্তবতা মনে করিয়ে দিই: এই পুরো সেটআপে একসাথে ৫টা জিনিস চালু রাখতে হবে (৩টা Kaggle ট্যাব + bridge টার্মিনাল + backend টার্মিনাল) — যেকোনো একটা বন্ধ হলে সেই অংশ কাজ করবে না, আর Kaggle সেশন বন্ধ হলে নতুন URL বসিয়ে সব রিস্টার্ট করতে হবে। এটা normal — প্রথমবার একটু ঝামেলার লাগতে পারে। কোনো ধাপে Error এলে পুরো মেসেজ কপি করে দেখাও, ঠিক করে দেব।
