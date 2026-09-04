@@ -1,0 +1,48 @@
+# docker-compose.override.yml
+#
+# Compose loads this automatically alongside docker-compose.yml as long as
+# it sits in the same folder — no extra flag needed. It changes 3 things,
+# nothing else in docker-compose.yml is touched:
+#
+# 1. Removes the NVIDIA GPU reservation on "backend" and "celery-worker"
+#    (Codespaces / most VPS boxes have no GPU — without this, `docker
+#    compose up` fails immediately with a device-request error).
+#
+# 2. Adds "env_file: .env" to "backend" and "celery-worker". The original
+#    docker-compose.yml only forwards a handful of hardcoded variables
+#    (DATABASE_URL, ANTHROPIC_API_KEY, ...) into the containers — settings
+#    like AVATAR_ENGINE, LLM_PROVIDER, LLM_MODEL, OPENAI_BASE_URL never
+#    reached the app even if you set them in .env. This line fixes that by
+#    loading the whole .env file into both containers.
+#
+# 3. Adds a free "ollama" service (runs inside Docker too, no separate
+#    install) so you have a completely free, local, no-API-key LLM.
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: avatar-ollama
+    volumes:
+      - ollama_data:/root/.ollama
+    networks:
+      - avatar-network
+    restart: unless-stopped
+
+  backend:
+    env_file:
+      - .env
+    deploy:
+      resources:
+        reservations:
+          devices: []
+
+  celery-worker:
+    env_file:
+      - .env
+    deploy:
+      resources:
+        reservations:
+          devices: []
+
+volumes:
+  ollama_data:

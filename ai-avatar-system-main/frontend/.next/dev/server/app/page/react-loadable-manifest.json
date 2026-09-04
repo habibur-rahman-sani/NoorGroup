@@ -1,0 +1,27 @@
+{
+  "[project]/components/ChatInterface.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/ChatInterface.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/components_ChatInterface_tsx_1yeo3gn._.js",
+      "static/chunks/node_modules_lucide-react_dist_esm_icons_1pju_cn._.js"
+    ]
+  },
+  "[project]/components/VoicePanel.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/VoicePanel.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/_19gs35m._.js"
+    ]
+  },
+  "[project]/components/HistoryPanel.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/HistoryPanel.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/_076o4ce._.js"
+    ]
+  },
+  "[project]/components/SettingsPanel.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/SettingsPanel.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/_03gxq5g._.js"
+    ]
+  }
+}
