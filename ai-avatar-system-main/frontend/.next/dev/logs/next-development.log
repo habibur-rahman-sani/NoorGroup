@@ -1,50 +1,30 @@
-{"timestamp":"00:00:02.734","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:59.286","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:02:17.438","source":"Browser","level":"INFO","message":"[vitals] LCP=5440.00 (poor)"}
-{"timestamp":"00:02:17.438","source":"Browser","level":"INFO","message":"[vitals] CLS=0.02 (good)"}
-{"timestamp":"00:02:17.438","source":"Browser","level":"INFO","message":"[vitals] INP=96.00 (good)"}
-{"timestamp":"00:02:17.438","source":"Browser","level":"INFO","message":"[vitals] LCP=5440.00 (poor)"}
-{"timestamp":"00:02:17.438","source":"Browser","level":"INFO","message":"[vitals] CLS=0.02 (good)"}
-{"timestamp":"00:02:17.438","source":"Browser","level":"INFO","message":"[vitals] INP=96.00 (good)"}
-{"timestamp":"00:07:31.198","source":"Browser","level":"INFO","message":"[vitals] LCP=5440.00 (poor)"}
-{"timestamp":"00:07:31.198","source":"Browser","level":"INFO","message":"[vitals] CLS=0.08 (good)"}
-{"timestamp":"00:07:31.199","source":"Browser","level":"INFO","message":"[vitals] INP=120.00 (good)"}
-{"timestamp":"00:07:31.199","source":"Browser","level":"INFO","message":"[vitals] LCP=5440.00 (poor)"}
-{"timestamp":"00:07:31.199","source":"Browser","level":"INFO","message":"[vitals] CLS=0.08 (good)"}
-{"timestamp":"00:07:31.199","source":"Browser","level":"INFO","message":"[vitals] INP=120.00 (good)"}
-{"timestamp":"00:12:47.195","source":"Browser","level":"INFO","message":"[vitals] LCP=5440.00 (poor)"}
-{"timestamp":"00:12:47.195","source":"Browser","level":"INFO","message":"[vitals] CLS=0.08 (good)"}
-{"timestamp":"00:12:47.195","source":"Browser","level":"INFO","message":"[vitals] INP=120.00 (good)"}
-{"timestamp":"00:12:47.195","source":"Browser","level":"INFO","message":"[vitals] LCP=5440.00 (poor)"}
-{"timestamp":"00:12:47.195","source":"Browser","level":"INFO","message":"[vitals] CLS=0.08 (good)"}
-{"timestamp":"00:12:47.195","source":"Browser","level":"INFO","message":"[vitals] INP=120.00 (good)"}
-{"timestamp":"00:14:32.823","source":"Browser","level":"INFO","message":"[vitals] LCP=5440.00 (poor)"}
-{"timestamp":"00:14:32.823","source":"Browser","level":"INFO","message":"[vitals] CLS=0.08 (good)"}
-{"timestamp":"00:14:32.823","source":"Browser","level":"INFO","message":"[vitals] INP=120.00 (good)"}
-{"timestamp":"00:14:32.823","source":"Browser","level":"INFO","message":"[vitals] LCP=5440.00 (poor)"}
-{"timestamp":"00:14:32.823","source":"Browser","level":"INFO","message":"[vitals] CLS=0.08 (good)"}
-{"timestamp":"00:14:32.823","source":"Browser","level":"INFO","message":"[vitals] INP=120.00 (good)"}
-{"timestamp":"00:18:02.676","source":"Browser","level":"INFO","message":"[vitals] LCP=5440.00 (poor)"}
-{"timestamp":"00:18:02.676","source":"Browser","level":"INFO","message":"[vitals] CLS=0.08 (good)"}
-{"timestamp":"00:18:02.676","source":"Browser","level":"INFO","message":"[vitals] INP=128.00 (good)"}
-{"timestamp":"00:18:02.677","source":"Browser","level":"INFO","message":"[vitals] LCP=5440.00 (poor)"}
-{"timestamp":"00:18:02.677","source":"Browser","level":"INFO","message":"[vitals] CLS=0.08 (good)"}
-{"timestamp":"00:18:02.677","source":"Browser","level":"INFO","message":"[vitals] INP=128.00 (good)"}
-{"timestamp":"00:25:02.822","source":"Browser","level":"INFO","message":"[vitals] LCP=5440.00 (poor)"}
-{"timestamp":"00:25:02.824","source":"Browser","level":"INFO","message":"[vitals] CLS=0.08 (good)"}
-{"timestamp":"00:25:02.824","source":"Browser","level":"INFO","message":"[vitals] INP=128.00 (good)"}
-{"timestamp":"00:25:02.824","source":"Browser","level":"INFO","message":"[vitals] LCP=5440.00 (poor)"}
-{"timestamp":"00:25:02.824","source":"Browser","level":"INFO","message":"[vitals] CLS=0.08 (good)"}
-{"timestamp":"00:25:02.824","source":"Browser","level":"INFO","message":"[vitals] INP=128.00 (good)"}
-{"timestamp":"00:26:47.522","source":"Browser","level":"INFO","message":"[vitals] LCP=5440.00 (poor)"}
-{"timestamp":"00:26:47.522","source":"Browser","level":"INFO","message":"[vitals] CLS=0.08 (good)"}
-{"timestamp":"00:26:47.522","source":"Browser","level":"INFO","message":"[vitals] INP=128.00 (good)"}
-{"timestamp":"00:26:47.522","source":"Browser","level":"INFO","message":"[vitals] LCP=5440.00 (poor)"}
-{"timestamp":"00:26:47.522","source":"Browser","level":"INFO","message":"[vitals] CLS=0.08 (good)"}
-{"timestamp":"00:26:47.522","source":"Browser","level":"INFO","message":"[vitals] INP=128.00 (good)"}
-{"timestamp":"00:30:17.955","source":"Browser","level":"INFO","message":"[vitals] LCP=5440.00 (poor)"}
-{"timestamp":"00:30:17.955","source":"Browser","level":"INFO","message":"[vitals] CLS=0.08 (good)"}
-{"timestamp":"00:30:17.955","source":"Browser","level":"INFO","message":"[vitals] INP=168.00 (good)"}
-{"timestamp":"00:30:17.955","source":"Browser","level":"INFO","message":"[vitals] LCP=5440.00 (poor)"}
-{"timestamp":"00:30:17.955","source":"Browser","level":"INFO","message":"[vitals] CLS=0.08 (good)"}
-{"timestamp":"00:30:17.955","source":"Browser","level":"INFO","message":"[vitals] INP=168.00 (good)"}
+{"timestamp":"00:00:23.678","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:59.579","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:02:43.830","source":"Browser","level":"INFO","message":"[vitals] LCP=9220.00 (poor)"}
+{"timestamp":"00:02:43.831","source":"Browser","level":"INFO","message":"[vitals] INP=80.00 (good)"}
+{"timestamp":"00:02:43.831","source":"Browser","level":"INFO","message":"[vitals] LCP=9220.00 (poor)"}
+{"timestamp":"00:02:43.831","source":"Browser","level":"INFO","message":"[vitals] INP=80.00 (good)"}
+{"timestamp":"00:06:12.655","source":"Browser","level":"INFO","message":"[vitals] LCP=9220.00 (poor)"}
+{"timestamp":"00:06:12.655","source":"Browser","level":"INFO","message":"[vitals] INP=80.00 (good)"}
+{"timestamp":"00:06:12.655","source":"Browser","level":"INFO","message":"[vitals] LCP=9220.00 (poor)"}
+{"timestamp":"00:06:12.656","source":"Browser","level":"INFO","message":"[vitals] INP=80.00 (good)"}
+{"timestamp":"00:09:41.125","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:11:14.412","source":"Browser","level":"INFO","message":"[vitals] CLS=0.00 (good)"}
+{"timestamp":"00:11:14.412","source":"Browser","level":"INFO","message":"[vitals] INP=64.00 (good)"}
+{"timestamp":"00:11:14.412","source":"Browser","level":"INFO","message":"[vitals] CLS=0.00 (good)"}
+{"timestamp":"00:11:14.412","source":"Browser","level":"INFO","message":"[vitals] INP=64.00 (good)"}
+{"timestamp":"00:11:35.362","source":"Browser","level":"INFO","message":"[vitals] CLS=0.00 (good)"}
+{"timestamp":"00:11:35.362","source":"Browser","level":"INFO","message":"[vitals] INP=104.00 (good)"}
+{"timestamp":"00:11:35.362","source":"Browser","level":"INFO","message":"[vitals] CLS=0.00 (good)"}
+{"timestamp":"00:11:35.362","source":"Browser","level":"INFO","message":"[vitals] INP=104.00 (good)"}
+{"timestamp":"00:15:04.465","source":"Browser","level":"INFO","message":"[vitals] CLS=0.02 (good)"}
+{"timestamp":"00:15:04.465","source":"Browser","level":"INFO","message":"[vitals] INP=144.00 (good)"}
+{"timestamp":"00:15:04.465","source":"Browser","level":"INFO","message":"[vitals] CLS=0.02 (good)"}
+{"timestamp":"00:15:04.465","source":"Browser","level":"INFO","message":"[vitals] INP=144.00 (good)"}
+{"timestamp":"00:20:20.638","source":"Browser","level":"INFO","message":"[vitals] CLS=0.02 (good)"}
+{"timestamp":"00:20:20.638","source":"Browser","level":"INFO","message":"[vitals] INP=144.00 (good)"}
+{"timestamp":"00:20:20.638","source":"Browser","level":"INFO","message":"[vitals] CLS=0.02 (good)"}
+{"timestamp":"00:20:20.638","source":"Browser","level":"INFO","message":"[vitals] INP=144.00 (good)"}
+{"timestamp":"00:37:06.292","source":"Server","level":"ERROR","message":"Turbopack build encountered 1 error:\n./app\nError: Could not find the Next.js package (next/package.json)\nResolved from: /workspaces/NoorGroup/ai-avatar-system-main/frontend/app\nFilesystem root used for resolution: /workspaces/NoorGroup/ai-avatar-system-main/frontend\n\nPossible causes:\n  - node_modules is being reorganized by a concurrent install (e.g. pnpm adding a package with a `next` peer dependency). This is transient and should clear once the install completes.\n  - node_modules/next was removed, renamed, or has a broken symlink.\n  - The workspace root is incorrect — see turbopack.root in the Next.js config docs for how to configure it.\n  - In a monorepo, the Next.js package may only exist in a directory above the closest directory containing a package manager lockfile. The workspace root is detected by locating the nearest package manager lockfile.\n  - Next.js is installed globally rather than as a project dependency. This is not supported; install it locally.\n\nNote: To ensure a hermetic build and a portable cache, files outside of the workspace root are not compiled.\n\nhttps://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory\n\n"}
+{"timestamp":"00:37:09.708","source":"Server","level":"ERROR","message":"ModuleBuildError: ./app\nError: Could not find the Next.js package (next/package.json)\nResolved from: /workspaces/NoorGroup/ai-avatar-system-main/frontend/app\nFilesystem root used for resolution: /workspaces/NoorGroup/ai-avatar-system-main/frontend\n\nPossible causes:\n  - node_modules is being reorganized by a concurrent install (e.g. pnpm adding a package with a `next` peer dependency). This is transient and should clear once the install completes.\n  - node_modules/next was removed, renamed, or has a broken symlink.\n  - The workspace root is incorrect — see turbopack.root in the Next.js config docs for how to configure it.\n  - In a monorepo, the Next.js package may only exist in a directory above the closest directory containing a package manager lockfile. The workspace root is detected by locating the nearest package manager lockfile.\n  - Next.js is installed globally rather than as a project dependency. This is not supported; install it locally.\n\nNote: To ensure a hermetic build and a portable cache, files outside of the workspace root are not compiled.\n\nhttps://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory\n\n"}
+{"timestamp":"00:37:09.756","source":"Server","level":"ERROR","message":"Error: Cannot find module 'next/dist/pages/_error'\nRequire stack:\n- /workspaces/NoorGroup/ai-avatar-system-main/frontend/node_modules/next/dist/server/dev/on-demand-entry-handler.js\n- /workspaces/NoorGroup/ai-avatar-system-main/frontend/node_modules/next/dist/server/dev/hot-reloader-turbopack.js\n- /workspaces/NoorGroup/ai-avatar-system-main/frontend/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js\n- /workspaces/NoorGroup/ai-avatar-system-main/frontend/node_modules/next/dist/server/lib/router-server.js\n- /workspaces/NoorGroup/ai-avatar-system-main/frontend/node_modules/next/dist/server/lib/start-server.js"}

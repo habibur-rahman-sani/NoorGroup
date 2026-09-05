@@ -1,0 +1,27 @@
+# Environments & Secrets .env .env.* *.env
+
+# Python & Virtual Envs
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Docker & Databases
+*.tar
+pgdata/
+data/
+*.sqlite3
+
+# Node.js
+node_modules/
+
+# Logs & Temporary Files
+*.log
+logs/
+.cache/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store

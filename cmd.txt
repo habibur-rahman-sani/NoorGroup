@@ -1,4 +1,5 @@
 uvicorn main:app --reload --port 8000
+<<<<<<< HEAD
 ধাপ ১ — Codespace-এ দুটো zip আপলোড
 আগের Codespace-টাই ব্যবহার করো (বা নতুন বানাও)। Explorer-এ drag & drop করো:
 
@@ -75,3 +76,10 @@ npm run dev
 Codespaces-এর Ports ট্যাব থেকে ৩০০০ নম্বর পোর্ট খোলো (Public করে দাও), চ্যাটে লিখো — "notepad খুলে hello লিখে দাও"।
 
 একটা বাস্তবতা মনে করিয়ে দিই: এই পুরো সেটআপে একসাথে ৫টা জিনিস চালু রাখতে হবে (৩টা Kaggle ট্যাব + bridge টার্মিনাল + backend টার্মিনাল) — যেকোনো একটা বন্ধ হলে সেই অংশ কাজ করবে না, আর Kaggle সেশন বন্ধ হলে নতুন URL বসিয়ে সব রিস্টার্ট করতে হবে। এটা normal — প্রথমবার একটু ঝামেলার লাগতে পারে। কোনো ধাপে Error এলে পুরো মেসেজ কপি করে দেখাও, ঠিক করে দেব।
+=======
+source /workspaces/NoorGroup/hermes-agent-main/.venv/bin/activate
+pnpm --filter @apps/ui-tars-bridge dev
+docker ps
+docker-compose up -d
+docker compose up -d postgres redis
+>>>>>>> 0062d567 (small file)
